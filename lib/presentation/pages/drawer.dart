@@ -33,9 +33,16 @@ Widget BuildDrawer(context) {
         ),
         ListTile(
           leading: Icon(Icons.save_alt),
-          title: Text('Watchlist'),
+          title: Text('Watchlist Movie'),
           onTap: () {
             Navigator.pushNamed(context, WatchlistMoviesPage.ROUTE_NAME);
+          },
+        ),
+        ListTile(
+          leading: Icon(Icons.save_alt),
+          title: Text('Watchlist Tv'),
+          onTap: () {
+            Navigator.pushNamed(context, WatchlistTvPage.ROUTE_NAME);
           },
         ),
         ListTile(

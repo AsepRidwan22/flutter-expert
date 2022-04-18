@@ -9,6 +9,6 @@ class GetWatchlistTv {
   GetWatchlistTv(this._repository);
 
   Future<Either<Failure, List<Tv>>> execute() {
-    return _repository.getNowPlayingTv();
+    return _repository.getWatchlistTv();
   }
 }

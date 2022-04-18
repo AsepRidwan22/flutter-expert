@@ -1,6 +1,8 @@
 import 'dart:convert';
 
 import 'package:proyek_awal/domain/entities/tv/tv_detail.dart';
+import 'package:proyek_awal/data/models/movie/genre_model.dart';
+import 'package:equatable/equatable.dart';
 
 TvDetailResponse welcomeFromJson(String str) =>
     TvDetailResponse.fromJson(json.decode(str));
