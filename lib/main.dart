@@ -1,4 +1,3 @@
-import 'package:dartz/dartz.dart';
 import 'package:proyek_awal/common/constants.dart';
 import 'package:proyek_awal/common/utils.dart';
 
@@ -47,10 +46,12 @@ import 'package:proyek_awal/injection.dart' as di;
 
 void main() {
   di.init();
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -150,7 +151,7 @@ class MyApp extends StatelessWidget {
 
             default:
               return MaterialPageRoute(builder: (_) {
-                return Scaffold(
+                return const Scaffold(
                   body: Center(
                     child: Text('Page not found :('),
                   ),

@@ -1,11 +1,10 @@
-import 'package:proyek_awal/data/models/tv/tv_detail_model.dart';
+import '../movie/genre.dart';
 import 'package:equatable/equatable.dart';
 
 class TvDetail extends Equatable {
   TvDetail({
-    required this.adult,
     required this.backdropPath,
-    required this.createdBy,
+    // required this.createdBy,
     required this.episodeRunTime,
     required this.firstAirDate,
     required this.genres,
@@ -14,10 +13,10 @@ class TvDetail extends Equatable {
     required this.inProduction,
     required this.languages,
     required this.lastAirDate,
-    required this.lastEpisodeToAir,
+    // required this.lastEpisodeToAir,
     required this.name,
     // required this.nextEpisodeToAir,
-    required this.networks,
+    // required this.networks,
     required this.numberOfEpisodes,
     required this.numberOfSeasons,
     required this.originCountry,
@@ -26,10 +25,10 @@ class TvDetail extends Equatable {
     required this.overview,
     required this.popularity,
     required this.posterPath,
-    required this.productionCompanies,
-    required this.productionCountries,
-    required this.seasons,
-    required this.spokenLanguages,
+    // required this.productionCompanies,
+    // required this.productionCountries,
+    // required this.seasons,
+    // required this.spokenLanguages,
     required this.status,
     required this.tagline,
     required this.type,
@@ -37,44 +36,42 @@ class TvDetail extends Equatable {
     required this.voteCount,
   });
 
-  final bool adult;
-  final String? backdropPath;
-  final List<CreatedBy> createdBy;
-  final List<int> episodeRunTime;
-  final DateTime firstAirDate;
-  final List<Genre> genres;
-  final String homepage;
-  final int id;
-  final bool inProduction;
-  final List<String> languages;
-  final DateTime lastAirDate;
-  final TEpisodeToAir lastEpisodeToAir;
-  final String name;
-  // TEpisodeToAir nextEpisodeToAir;
-  final List<Network> networks;
-  final int numberOfEpisodes;
-  final int numberOfSeasons;
-  final List<String> originCountry;
-  final String originalLanguage;
-  final String originalName;
-  final String overview;
-  final double popularity;
-  final String posterPath;
-  final List<dynamic> productionCompanies;
-  final List<dynamic> productionCountries;
-  final List<Season> seasons;
-  final List<SpokenLanguage> spokenLanguages;
-  final String status;
-  final String tagline;
-  final String type;
-  final double voteAverage;
-  final int voteCount;
+  String? backdropPath;
+  // List<CreatedBy> createdBy;
+  List<int> episodeRunTime;
+  DateTime firstAirDate;
+  List<Genre> genres;
+  String homepage;
+  int id;
+  bool inProduction;
+  List<String> languages;
+  DateTime lastAirDate;
+  // LastEpisodeToAir lastEpisodeToAir;
+  String name;
+  dynamic nextEpisodeToAir;
+  // List<Network> networks;
+  int numberOfEpisodes;
+  int numberOfSeasons;
+  List<String> originCountry;
+  String originalLanguage;
+  String originalName;
+  String overview;
+  double popularity;
+  String posterPath;
+  // List<Network> productionCompanies;
+  // List<ProductionCountry> productionCountries;
+  // List<Season> seasons;
+  // List<SpokenLanguage> spokenLanguages;
+  String status;
+  String tagline;
+  String type;
+  double voteAverage;
+  int voteCount;
 
   @override
   List<Object?> get props => [
-        adult,
         backdropPath,
-        createdBy,
+        // List<CreatedBy> createdBy;
         episodeRunTime,
         firstAirDate,
         genres,
@@ -83,10 +80,10 @@ class TvDetail extends Equatable {
         inProduction,
         languages,
         lastAirDate,
-        lastEpisodeToAir,
+        // LastEpisodeToAir lastEpisodeToAir;
         name,
-        // nextEpisodeToAir,
-        networks,
+        nextEpisodeToAir,
+        // List<Network> networks;
         numberOfEpisodes,
         numberOfSeasons,
         originCountry,
@@ -95,10 +92,10 @@ class TvDetail extends Equatable {
         overview,
         popularity,
         posterPath,
-        productionCompanies,
-        productionCountries,
-        seasons,
-        spokenLanguages,
+        // List<Network> productionCompanies;
+        // List<ProductionCountry> productionCountries;
+        // seasons,
+        // List<SpokenLanguage> spokenLanguages;
         status,
         tagline,
         type,

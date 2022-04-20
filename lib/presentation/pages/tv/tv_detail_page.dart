@@ -70,16 +70,6 @@ class DetailContent extends StatefulWidget {
 }
 
 class _DetailContentState extends State<DetailContent> {
-  // late Season dropSeason;
-  // late int episode;
-
-  // @override
-  // void initState() {
-  //   dropSeason = widget.tv.seasons[0];
-  //   episode = widget.tv.seasons[0].episodeCount;
-  //   super.initState();
-  // }
-
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
@@ -165,6 +155,11 @@ class _DetailContentState extends State<DetailContent> {
                                 ],
                               ),
                             ),
+                            Text(
+                              _showGenres(widget.tv.genres),
+                            ),
+                            Text('${widget.tv.numberOfEpisodes} Episodes'),
+                            Text('${widget.tv.numberOfSeasons} Season'),
                             Row(
                               children: [
                                 RatingBarIndicator(

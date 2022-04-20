@@ -1,45 +1,9 @@
-// To parse this JSON data, do
-//
-//     final welcome = welcomeFromJson(jsonString);
-
 import 'dart:convert';
 
 import 'package:proyek_awal/domain/entities/tv/tv.dart';
+import 'package:equatable/equatable.dart';
 
-Welcome welcomeFromJson(String str) => Welcome.fromJson(json.decode(str));
-
-String welcomeToJson(Welcome data) => json.encode(data.toJson());
-
-class Welcome {
-  Welcome({
-    required this.page,
-    required this.results,
-    required this.totalPages,
-    required this.totalResults,
-  });
-
-  int page;
-  List<Result> results;
-  int totalPages;
-  int totalResults;
-
-  factory Welcome.fromJson(Map<String, dynamic> json) => Welcome(
-        page: json["page"],
-        results:
-            List<Result>.from(json["results"].map((x) => Result.fromJson(x))),
-        totalPages: json["total_pages"],
-        totalResults: json["total_results"],
-      );
-
-  Map<String, dynamic> toJson() => {
-        "page": page,
-        "results": List<dynamic>.from(results.map((x) => x.toJson())),
-        "total_pages": totalPages,
-        "total_results": totalResults,
-      };
-}
-
-class Result {
+class Result extends Equatable {
   Result({
     required this.backdropPath,
     // required this.firstAirDate,
@@ -56,7 +20,7 @@ class Result {
     required this.voteCount,
   });
 
-  String backdropPath;
+  String? backdropPath;
   // DateTime firstAirDate;
   List<int> genreIds;
   int id;
@@ -120,4 +84,20 @@ class Result {
       voteCount: voteCount,
     );
   }
+
+  @override
+  List<Object?> get props => [
+        backdropPath,
+        genreIds,
+        id,
+        name,
+        originCountry,
+        originalLanguage,
+        originalName,
+        overview,
+        popularity,
+        posterPath,
+        voteAverage,
+        voteCount,
+      ];
 }

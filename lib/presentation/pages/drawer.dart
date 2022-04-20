@@ -10,7 +10,7 @@ Widget BuildDrawer(context) {
   return Drawer(
     child: Column(
       children: [
-        UserAccountsDrawerHeader(
+        const UserAccountsDrawerHeader(
           currentAccountPicture: CircleAvatar(
             backgroundImage: AssetImage('assets/circle-g.png'),
           ),
@@ -18,29 +18,29 @@ Widget BuildDrawer(context) {
           accountEmail: Text('ditonton@dicoding.com'),
         ),
         ListTile(
-          leading: Icon(Icons.tv),
-          title: Text('Movies'),
+          leading: const Icon(Icons.movie),
+          title: const Text('Movies'),
           onTap: () {
             Navigator.pushNamed(context, HomePage.ROUTE_NAME);
           },
         ),
         ListTile(
-          leading: Icon(Icons.tv),
-          title: Text('Tv'),
+          leading: const Icon(Icons.tv),
+          title: const Text('Tv'),
           onTap: () {
             Navigator.pushNamed(context, TvPage.ROUTE_NAME);
           },
         ),
         ListTile(
-          leading: Icon(Icons.save_alt),
-          title: Text('Watchlist Movie'),
+          leading: const Icon(Icons.save_alt),
+          title: const Text('Watchlist Movie'),
           onTap: () {
             Navigator.pushNamed(context, WatchlistMoviesPage.ROUTE_NAME);
           },
         ),
         ListTile(
-          leading: Icon(Icons.save_alt),
-          title: Text('Watchlist Tv'),
+          leading: const Icon(Icons.save_alt),
+          title: const Text('Watchlist Tv'),
           onTap: () {
             Navigator.pushNamed(context, WatchlistTvPage.ROUTE_NAME);
           },
@@ -49,8 +49,8 @@ Widget BuildDrawer(context) {
           onTap: () {
             Navigator.pushNamed(context, AboutPage.ROUTE_NAME);
           },
-          leading: Icon(Icons.info_outline),
-          title: Text('About'),
+          leading: const Icon(Icons.info_outline),
+          title: const Text('About'),
         ),
       ],
     ),
