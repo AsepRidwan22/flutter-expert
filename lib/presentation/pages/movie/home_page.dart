@@ -58,11 +58,11 @@ class _HomeTvPageState extends State<HomePage> {
               ),
               Consumer<MovieListNotifier>(builder: (context, data, child) {
                 final state = data.nowPlayingState;
-                if (state == RequestState.Loading) {
+                if (state == RequestState.loading) {
                   return const Center(
                     child: CircularProgressIndicator(),
                   );
-                } else if (state == RequestState.Loaded) {
+                } else if (state == RequestState.loaded) {
                   return MovieList(data.nowPlayingMovies);
                 } else {
                   return const Text('Failed');
@@ -75,11 +75,11 @@ class _HomeTvPageState extends State<HomePage> {
               ),
               Consumer<MovieListNotifier>(builder: (context, data, child) {
                 final state = data.popularMoviesState;
-                if (state == RequestState.Loading) {
+                if (state == RequestState.loading) {
                   return const Center(
                     child: const CircularProgressIndicator(),
                   );
-                } else if (state == RequestState.Loaded) {
+                } else if (state == RequestState.loaded) {
                   return MovieList(data.popularMovies);
                 } else {
                   return const Text('Failed');
@@ -92,11 +92,11 @@ class _HomeTvPageState extends State<HomePage> {
               ),
               Consumer<MovieListNotifier>(builder: (context, data, child) {
                 final state = data.topRatedMoviesState;
-                if (state == RequestState.Loading) {
+                if (state == RequestState.loading) {
                   return const Center(
                     child: const CircularProgressIndicator(),
                   );
-                } else if (state == RequestState.Loaded) {
+                } else if (state == RequestState.loaded) {
                   return MovieList(data.topRatedMovies);
                 } else {
                   return const Text('Failed');

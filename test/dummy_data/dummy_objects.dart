@@ -112,6 +112,13 @@ final testTvTable = TvTable(
   overview: 'overview',
 );
 
+final testTvMap = {
+  'id': 1,
+  'name': 'name',
+  'posterPath': 'posterPath',
+  'overview': 'overview',
+};
+
 final testWatchlistTv = Tv.watchlist(
   id: 1,
   name: 'name',

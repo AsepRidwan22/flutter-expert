@@ -19,9 +19,9 @@ class Tv extends Equatable {
 
   Tv.watchlist({
     required this.id,
+    required this.name,
     required this.overview,
     required this.posterPath,
-    required this.name,
   });
 
   String? backdropPath;
