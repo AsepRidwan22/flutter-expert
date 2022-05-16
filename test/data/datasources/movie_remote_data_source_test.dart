@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:proyek_awal/data/datasources/data_source/movie_remote_data_source.dart';
-import 'package:proyek_awal/data/models/movie/movie_detail_model.dart';
-import 'package:proyek_awal/data/models/movie/movie_response.dart';
-import 'package:proyek_awal/common/exception.dart';
+import 'package:core/data/datasources/data_source/movie_remote_data_source.dart';
+import 'package:core/data/models/movie/movie_detail_model.dart';
+import 'package:core/data/models/movie/movie_response.dart';
+import 'package:core/utils/exception.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
 import 'package:mockito/mockito.dart';

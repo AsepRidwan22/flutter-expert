@@ -45,6 +45,22 @@ dependencies:
   cached_network_image: ^3.2.0
   mockito: ^5.1.0
   integration_test: ^0.8.1
+  about:
+    path: about
+  core:
+    path: core
+  search:
+    path: search
+  movie:
+    path: movie
+  watchlist:
+    path: watchlist
+  tv:
+    path: tv
+  flutter_bloc: ^8.0.1
+  rxdart: ^0.27.3
+  firebase_core: ^1.6.0
+  firebase_crashlytics: ^2.8.0
 
 dev_dependencies:
   flutter_test:
