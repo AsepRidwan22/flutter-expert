@@ -2,7 +2,6 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:core/utils/routes.dart';
 import '../../../utils/constants.dart';
 import '../../../domain/entities/tv/tv.dart';
-import 'package:tv/presentation/pages/tv_detail_page.dart';
 import 'package:flutter/material.dart';
 import '../../../styles/text_styles.dart';
 
