@@ -53,18 +53,9 @@ import 'package:tv/presentation/bloc/popular_tvs_bloc.dart';
 import 'package:tv/presentation/bloc/top_rated_tvs_bloc.dart';
 import 'package:tv/presentation/bloc/tv_detail/tv_detail_bloc.dart';
 import 'package:tv/presentation/bloc/tv_list_bloc.dart';
-
-// import 'package:watchlist/domain/usecases/movie/get_watchlist_movies.dart';
-// import 'package:watchlist/domain/usecases/movie/get_watchlist_status.dart';
-// import 'package:watchlist/domain/usecases/tv/get_watchlist_status.dart';
-// import 'package:watchlist/domain/usecases/tv/get_watchlist_tv.dart';
-// import 'package:watchlist/domain/usecases/movie/remove_watchlist.dart';
-// import 'package:watchlist/domain/usecases/tv/remove_watchlist.dart';
-// import 'package:watchlist/domain/usecases/movie/save_watchlist.dart';
-// import 'package:watchlist/domain/usecases/movie/save_watchlist.dart';
 import 'package:watchlist/presentation/bloc/watchlist_bloc.dart';
 
-import 'package:http/http.dart' as http;
+import 'package:core/utils/ssl_pinning.dart';
 import 'package:get_it/get_it.dart';
 
 final locator = GetIt.instance;
@@ -211,5 +202,5 @@ void init() {
   locator.registerLazySingleton<DatabaseHelperTv>(() => DatabaseHelperTv());
 
   // external
-  locator.registerLazySingleton(() => http.Client());
+  locator.registerLazySingleton(() => HttpSSLPinning.client);
 }

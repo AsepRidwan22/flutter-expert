@@ -54,7 +54,7 @@ class _HomeTvPageState extends State<HomeTvPage> {
             ),
             ListTile(
               leading: const Icon(Icons.tv),
-              title: const Text('TV'),
+              title: const Text('Movie'),
               onTap: () {
                 Navigator.pushNamed(context, HOME_PAGE_MOVIE);
               },
@@ -91,11 +91,11 @@ class _HomeTvPageState extends State<HomeTvPage> {
         ),
       ),
       appBar: AppBar(
-        title: const Text('Movies'),
+        title: const Text('TV'),
         actions: [
           IconButton(
             onPressed: () {
-              Navigator.pushNamed(context, SEARCH_MOVIE);
+              Navigator.pushNamed(context, SEARCH_TV);
             },
             icon: const Icon(Icons.search),
           )
