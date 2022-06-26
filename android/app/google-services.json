@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "443018318255",
+    "project_id": "filmapp-dicoding",
+    "storage_bucket": "filmapp-dicoding.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443018318255:android:4e7e55065bea4dc7335f5a",
+        "android_client_info": {
+          "package_name": "com.example.proyek_awal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443018318255-l24n74i02u67covke16fs9gofa6j3ifi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnJUMhnxh5wWsT5-meBFVPH7LqrNJRPzw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443018318255-l24n74i02u67covke16fs9gofa6j3ifi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

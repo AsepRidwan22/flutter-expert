@@ -1,0 +1,13 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "id": 1,
+      "name": "name",
+      "overview": "Overview",
+      "poster_path": "/path.jpg"
+    }
+  ],
+  "total_pages": 56,
+  "total_results": 1108
+}
